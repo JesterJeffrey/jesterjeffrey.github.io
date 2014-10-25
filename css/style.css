@@ -14,7 +14,8 @@
 
 	body
 	{
-		background-image:			url('images/overlay.png'),		url('images/bg.jpg');
+		background-image:			url('images/overlay.png');
+		background-color: 			#659D32;
 		background-repeat:			repeat,							no-repeat;
 		background-size:			auto,							100% 100%;
 	}
@@ -37,7 +38,7 @@
 	{
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #777777;
+		color: #545454;
 	}
 	
 	strong, b
