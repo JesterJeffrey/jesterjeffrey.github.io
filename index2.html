@@ -22,8 +22,10 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="js/jquery.gmap.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="repowidget/jquery.githubRepoWidget.min.js"></script>
     
-<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+</head>
+
     <body>
         <!-- Container -->
         <div id="container">
@@ -55,7 +57,7 @@
                 <!-- Profile -->
                 <div id="profile"> 
                  	<!-- About section -->
-					<div class="about">
+                	<div class="about">
                     	<div class="photo-inner"><img src="images/photo.jpg" height="186" width="153" /></div>
                         <h1>JEFFREY EGLY</h1>
                         <h3>PROGRAMMER</h3>
@@ -223,6 +225,10 @@
                         <li><a href="" data-filter=".animation">Animation</a></li>
                     </ul>
                     <div class="extra-text">Some of the projects i'm proud with</div>
+                    <div class="webdesign">
+                    <div class="webdesign">
+                            <div class="github-widget" data-repo="JesterJeffrey/Marble"></div>
+                    	</div> 
                     <ul id="portfolio-list">
                         <li class="illustration print">
                             <a href="portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
@@ -231,13 +237,9 @@
                                 <span class="categorie">Print / Illustration</span> 
                             </a>
                     	</li>
-                        <li class="webdesign">
-                            <a href="http://www.youtube.com/embed/c9MnSeYYtYY?autoplay=1" rel="portfolio" class="folio iframe">
-                                <img src="portfolio/3-thumb.jpg" alt="" >
-                                <h2 class="title">Snow time</h2>
-                                <span class="categorie">Webdesign</span> 
-                            </a>
-                    	</li>                        
+                        <div class="webdesign">
+                            <div class="github-widget" data-repo="JesterJeffrey/Marble"></div>
+                    	</div>                        
                         <li class="photoghraphy">
                             <a href="http://www.google.com" rel="portfolio" target="_new">
                                 <img src="portfolio/2-thumb.jpg" alt="" >                            
@@ -300,7 +302,7 @@
                     <!-- /Contact Info -->
                     
                     <!-- Contact Form -->
-                     <div class="contact-form">
+                    <div class="contact-form">
                         <h3 class="main-heading"><span>Let's keep in touch</span></h3>
                         <div id="contact-status"></div>
                         <form id="contactform" method="POST">
