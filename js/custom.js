@@ -136,13 +136,13 @@ jQuery(document).ready(function(){
 	// Needed variables
 	var $map 				= $('#map'),
 		$tabContactClass 	= ('tab-contact'),
-		$address 			= 'Level 13, 2 Elizabeth St, Melbourne Victoria 3000 Australia';
+		$address 			= 'Vancouver, WA';
 	
 	$content.bind('easytabs:after', function(evt,tab,panel) {
 		if ( tab.hasClass($tabContactClass) ) {
 			$map.gMap({
 				address: $address,
-				zoom: 16,
+				zoom: 10,
 				markers: [
 					{ 'address' : $address }
 				]
