@@ -304,24 +304,16 @@
                         <h3 class="main-heading"><span>Let's keep in touch</span></h3>
                         <div id="contact-status"></div>
                         <form id="contactform" method="POST">
-                            <p>
-                            	<label for="name">Your Name</label>
-                            	<input type="text" name="name" class="input" >
-                            </p>
-                            <p>
-                            	<label for="email">Your Email</label>
-                            	<input type="text" name="email" class="input">
-                            </p>
-                            <p>
-                            	<label for="message">Your Message</label>
-                                <textarea name="message" cols="88" rows="6" class="textarea" ></textarea>
-                            </p>
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <input type="submit" name="submit" value="Send your message" class="submit">
-                        </form>
-                        <script>
+							<input type="text" name="name" placeholder="Your name" class="input">
+							<input type="email" name="_replyto" placeholder="Your email" class="input">
+							<input type="hidden" name="_subject" value="Website contact" class="input" />
+							<textarea name="message" placeholder="Your message" cols="88" rows="6" class="textarea"></textarea>
+							<input type="text" name="_gotcha" style="display:none" />
+							<input type="submit" value="Send" class="submit">
+						</form>
+						<script>
 							var contactform =  document.getElementById('contactform');
-							contactform.setAttribute('action', '//formspree.io/' + 'jeffrey' + '@' + 'preparedfor' + '.' + 'work');
+							contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
 						</script>
                     </div>
                     <!-- /Contact Form -->
