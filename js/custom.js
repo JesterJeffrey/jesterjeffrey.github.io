@@ -103,7 +103,34 @@ jQuery(document).ready(function(){
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Form
 	/* ---------------------------------------------------------------------- */
-	//custom PHP not allowed
+	
+	// Needed variables
+	var $contactform 	= $('#contactform'),
+		$success		= 'Your message has been sent. Thank you!';
+		
+		
+	$contactform.submit(function(){
+		$.ajax({
+		   type: "POST",
+		   url: "//formspree.io/jeffrey@preparedfor.work",
+		   data: $(this).serialize(),
+		   success: function(msg)
+		   {
+				if(msg == 'SEND'){
+					response = '<div class="success">'+ $success +'</div>';
+				}
+				else{
+					response = '<div class="error">'+ msg +'</div>';
+				}
+				// Hide any previous response text
+				$(".error,.success").remove();
+				// Show response message
+				$contactform.prepend(response);
+			}
+		 });
+		return false;
+	});
+		
 	/* ---------------------------------------------------------------------- */
 	/*	Google Maps
 	/* ---------------------------------------------------------------------- */
