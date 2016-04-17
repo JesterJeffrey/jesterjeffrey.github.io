@@ -109,12 +109,12 @@ jQuery(document).ready(function(){
 		$success		= 'Your message has been sent. Thank you!';
 		
 	$contactform.submit(function(){
+		contactform.setAttribute('action', '//formspree.io/' + 'jeffrey' + '@' + 'preparedfor' + '.' + 'work');
 		response = '<div class="success">'+ $success +'</div>'
 		// Hide any previous response text
 		$(".success").remove();
 		// Show response message
 		$contactform.prepend(response);
-		return false;
 	});	
 	/* ---------------------------------------------------------------------- */
 	/*	Google Maps
