@@ -105,31 +105,29 @@ jQuery(document).ready(function(){
 	/* ---------------------------------------------------------------------- */
 	
 	// Needed variables
-	var $contactform 	= $('#contactform'),
+	var $contactForm 	= $('#contactform'),
 		$success		= 'Your message has been sent. Thank you!';
 		
 		
-	$contactform.submit(function(){
-		$.ajax({
-		   type: "POST",
-		   url: "//formspree.io/jeffrey@preparedfor.work",
-		   data: $(this).serialize(),
-		   success: function(msg)
-		   {
-				if(msg == 'SEND'){
+		$contactForm.submit(function(e) {
+			e.preventDefault();
+			$.ajax({
+				url: '//formspree.io/jeffrey@preparedfor.work',
+				method: 'POST',
+				data: $(this).serialize(),
+				dataType: 'json',
+				success: function(data) {
 					response = '<div class="success">'+ $success +'</div>';
+				},
+				error: function(err) {
+					response = '<div class="error">There was an issue submitting your message. Please try again.</div>';
 				}
-				else{
-					response = '<div class="error">'+ msg +'</div>';
-				}
-				// Hide any previous response text
-				$(".error,.success").remove();
-				// Show response message
-				$contactform.prepend(response);
-			}
-		 });
-		return false;
-	});
+			});
+			// Hide any previous response text
+			$(".error,.success").remove();
+			// Show response message
+			$contactForm.prepend(response);
+		});
 		
 	/* ---------------------------------------------------------------------- */
 	/*	Google Maps
