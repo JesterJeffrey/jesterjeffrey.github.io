@@ -115,7 +115,6 @@ jQuery(document).ready(function(){
 		$(".success").remove();
 		// Show response message
 		$contactform.prepend(response);
-		return false; 
 	});	
 	/* ---------------------------------------------------------------------- */
 	/*	Google Maps
