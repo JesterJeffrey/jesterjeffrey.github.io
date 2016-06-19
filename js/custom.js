@@ -1,5 +1,16 @@
 jQuery(document).ready(function(){ 
 	
+	function getParameterByName(name) {
+    	var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    	return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+	}
+	
+	var checkForm = getParameterByName('form');
+	
+	if(checkForm == 'success'){
+		alert("I am an alert box!");
+	}
+
 	/* ---------------------------------------------------------------------- */
 	/*	Custom Functions
 	/* ---------------------------------------------------------------------- */
@@ -116,7 +127,6 @@ jQuery(document).ready(function(){
 		$contactform.submit(function(e){
         	if ($(this).valid()) {
 				$contactform.prepend(response);
-				alert("I am an alert box!");
 			}
        			return false;
      		});
