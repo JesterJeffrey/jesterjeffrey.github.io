@@ -116,6 +116,7 @@ jQuery(document).ready(function(){
 		$contactform.submit(function(e){
         	if ($(this).valid()) {
 				$contactform.prepend(response);
+				alert("I am an alert box!");
 			}
        			return false;
      		});
