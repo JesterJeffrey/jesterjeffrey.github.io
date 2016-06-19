@@ -113,9 +113,13 @@ jQuery(document).ready(function(){
 		response = '<div class="success">'+ $success +'</div>'
 		// Hide any previous response text
 		$(".success").remove();
-		// Show response message
-		$contactform.prepend(response);
-	});	
+		$contactform.submit(function(e){
+        	if ($(this).valid()) {
+				$contactform.prepend(response);
+			}
+       			return false;
+     		});
+		});	
 	/* ---------------------------------------------------------------------- */
 	/*	Google Maps
 	/* ---------------------------------------------------------------------- */
