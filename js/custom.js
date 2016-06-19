@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
 	var checkForm = getParameterByName('form');
 	
 	if(checkForm == 'success'){
-		alert("I am an alert box!");
+		setTimeout(function() { alert("Your message has been sent! I'll be in contact shortly."); }, 1);
 	}
 
 	/* ---------------------------------------------------------------------- */
