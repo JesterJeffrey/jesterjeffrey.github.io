@@ -360,35 +360,56 @@
 		font-size:15px;
 		color: #444;
 	}
-	.skills li .rat0, .skills li .rat1, .skills li .rat2, .skills li .rat3, .skills li .rat4, .skills li .rat5, .skills li .rat6, .skills li .rat7 {
-		width:123px;
-		height:14px;
+	#rating {
+		width:100px;
+    	height:10px;
+		background-color:#c6c6c6;
 		float:left;
 	}
-	.skills li .rat0 {
-		background:url(../images/rats.png) no-repeat;
+	
+	.skills li .ratSQL {
+		width:85px;
+    	height:10px;
+    	background-color:#5f5f5f;
+    	float:left;
 	}
-	.skills li .rat1 {
-		background:url(../images/rats.png) no-repeat 0px -14px;
+	.skills li .ratJava {
+		width:80px;
+    	height:10px;
+    	background-color:#5f5f5f;
+    	float:left;
 	}
-	.skills li .rat2 {
-		background:url(../images/rats.png) no-repeat 0px -28px;
+	.skills li .ratRuby {
+		width:80px;
+    	height:10px;
+    	background-color:#5f5f5f;
+    	float:left;
 	}
-	.skills li .rat3 {
-		background:url(../images/rats.png) no-repeat 0px -42px;
+	.skills li .ratWeb {
+		width:75px;
+    	height:10px;
+    	background-color:#5f5f5f;
+    	float:left;
 	}
-	.skills li .rat4 {
-		background:url(../images/rats.png) no-repeat 0px -56px;
+	.skills li .ratPython {
+		width:70px;
+    	height:10px;
+    	background-color:#5f5f5f;
+    	float:left;
 	}
-	.skills li .rat5 {
-		background:url(../images/rats.png) no-repeat 0px -70px;
+	.skills li .ratC {
+		width:65px;
+    	height:10px;
+    	background-color:#5f5f5f;
+    	float:left;
 	}
-	.skills li .rat6 {
-		background:url(../images/rats.png) no-repeat 0px -84px;
+	.skills li .ratApple {
+		width:55px;
+    	height:10px;
+    	background-color:#5f5f5f;
+    	float:left;
 	}
-	.skills li .rat7 {
-		background:url(../images/rats.png) no-repeat 0px -98px;
-	}
+	
 	/*-------------------------------------------------------*/
 		/* Portfolio Section */
 	/*-------------------------------------------------------*/
