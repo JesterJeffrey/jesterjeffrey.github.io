@@ -27,17 +27,14 @@
 
 	var $window = $(window);
 	
-	var $contactform 	= $('#contactform'),
-		$success		= 'Your message has been sent. Thank you!';
+	var $contactform 	= $('#contactform');
 		
 	$contactform.submit(function(){
 		contactform.setAttribute('action', '//formspree.io/' + 'jeffrey' + '@' + 'preparedfor' + '.' + 'work');
-		response = '<div class="success">'+ $success +'</div>'
-		// Hide any previous response text
-		$(".success").remove();
+		
 		$contactform.submit(function(e){
         	if ($(this).valid()) {
-				$contactform.prepend(response);
+				return true;
 			}
        			return false;
      		});
