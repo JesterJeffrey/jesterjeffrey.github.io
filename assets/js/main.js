@@ -30,7 +30,7 @@
 	var $contactform 	= $('#contactform');
 		
 	$contactform.submit(function(){
-		contactform.setAttribute('action', '//formspree.io/' + 'jeffrey' + '@' + 'preparedfor' + '.' + 'work');
+		contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'jkegly' + '.' + 'info');
 		
 		$contactform.submit(function(e){
         	if ($(this).valid()) {
