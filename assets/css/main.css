@@ -1587,7 +1587,6 @@
 	.timeline-section {
 		width: 50%;
 		min-width: 280px;
-		padding-right:60px;
 	}
 	.timeline {
 		padding-top:10px;
@@ -1710,19 +1709,23 @@
 	}
 	
 	.skills-section, .timeline-section {
-		float:left;
+		display:inline-block;
+		text-align:left;
+		vertical-align: top;
 	}
 	
 	.container
 {
     width:100%;
-    display:inline-block;
+    text-align:center;
 }
 
 .work
 {
     color: #666;
-    font-size:18px;
+    font-size:15px;
+    line-height: 1.2;
+    margin-top:5px;
 }
 
 .work a:link { color: #444; }
