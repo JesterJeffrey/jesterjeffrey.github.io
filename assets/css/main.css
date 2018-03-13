@@ -1641,6 +1641,7 @@
 	/* Skills Section */
 	.skills-section {
 		width:280px;
+		padding-left: 20px;
 	}
 	.skills {
 		overflow:hidden;
